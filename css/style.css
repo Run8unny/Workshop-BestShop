@@ -13,7 +13,6 @@
     --color-white: #FFFFFF;
     --font-opensans: 'Open Sans', sans-serif;
     --font-raleway: 'Raleway', sans-serif;
-    --margin-top: 10rem;
 }
 
 .header {
@@ -107,12 +106,16 @@
     box-shadow: 5px 10px 14px #07ACE629;
 }
 
+.btn:hover {
+    background-color: #03a6ff;
+}
+
 .hero-title {
     font-family: var(--font-raleway);
     font-size: 49px;
     color: var(--color-black);
     padding: 20px;
-    margin-top: var(--margin-top);
+    margin-top: 10rem;
 }
 
 .hero-text {
@@ -205,41 +208,153 @@
 }
 
 .section-info {
-    width: 100%;
-    height: 500px;
     background-color: var(--color-light-grey);
 }
 
-.section .container {
-    width: 1352px;
-    margin: 0 auto;
+.container-rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.container-last-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.info-box {
+    width: 1124px;
+    height: 370px;
+    display: flex;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-grey);
+}
+
+.info-box1 {
+    margin-top: 100px;
+}
+
+.info-picture-column {
+    width: 450px;
+    height: 370px;
+    position: relative;
 }
 
 .info-picture1 {
     width: 433px;
-    height: 294px;
+    height: 300px;
+    background-image: url("../assets/Macbook.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    position: absolute;
+    z-index: 3;
 }
+
+.info-rectangle {
+    width: 200px;
+    height: 200px;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    background-color: var(--color-violet);
+    border-radius: 41px;
+    translate: 95% 35%;
+    position: absolute;
+    z-index: 1;
+}
+
 .info-picture2 {
-    width: 426px;
-    height: 328px;
+    width: 664px;
+    height: 370px;
+    background-image: url("../assets/iPhone.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
 }
+
+.info-circle {
+    width: 250px;
+    height: 250px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    translate: 50% 10%;
+    z-index: 2;
+}
+
 .info-picture3 {
+    width: 440px;
+    height: 370px;
+    background-color: var(--color-green);
+    background-image: url("../assets/Trumpet.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    margin-bottom: 100px;
+}
+
+
+.info-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.info-article1 {
+    width: 634px;
+    height: 370px;
+}
+
+.info-article2 {
     width: 440px;
     height: 370px;
 }
 
-.info-img {
-  background-size: contain;
-}
-
-.info-article {
-
+.info-article3 {
+    width: 634px;
+    height: 370px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-grey);
+    margin-bottom: 100px;
 }
 
 .info-article-title {
     font-family: var(--font-raleway);
+    color: var(--color-black);
+    font-size: 36px;
+    padding: 20px;
 }
 
 .info-article-text {
+    font-family: var(--font-opensans);
+    color: var(--color-black);
+    font-size: 16px;
+    line-height: 22px;
+    padding: 20px;
+}
 
+.info-line1,
+.info-line2,
+.info-line3 {
+    width: 300px;
+    height: 3px;
+    z-index: 1;
+    margin-left: 20px;
+}
+
+.info-line1 {
+    background-color: var(--color-violet);
+}
+
+.info-line2 {
+    background-color: var(--color-primary);
+}
+
+.info-line3 {
+    background-color: var(--color-green);
 }
