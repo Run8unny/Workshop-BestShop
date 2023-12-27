@@ -90,9 +90,6 @@
 }
 
 
-
-
-
 /*------------------------------------*\
   #HERO
 \*------------------------------------*/
@@ -157,9 +154,6 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
-
-
-
 
 
 /*------------------------------------*\
@@ -245,9 +239,6 @@
     padding: 0.625rem;
     margin-bottom: 100px;
 }
-
-
-
 
 
 /*------------------------------------*\
@@ -421,9 +412,6 @@
 }
 
 
-
-
-
 /*------------------------------------*\
   #PRICING
 \*------------------------------------*/
@@ -435,7 +423,7 @@
 }
 
 .pricing-box {
-    flex-basis: 360px;
+    width: 360px;
     height: 460px;
     border-radius: 18px;
     margin-bottom: 100px;
@@ -462,19 +450,18 @@
     font-weight: 800;
     font-size: 1.3125rem;
     color: var(--color-black);
-    padding: 20px 0 0 0;
 }
 
 .pricing-subtitle {
     font-family: var(--font-opensans);
     font-weight: 300;
     font-size: 2.875rem;
-    padding: 20px 0 10px 0;
+    margin-top: 20px;
 }
 
 .pricing-subtitle1 {
     color: var(--color-violet);
-    margin-bottom: 2.5rem;
+    margin-bottom: 20px;
 }
 
 .pricing-subtitle2 {
@@ -517,7 +504,8 @@
 }
 
 .pricing-box-list {
-
+    list-style: none;
+    text-decoration: none;
 }
 
 .btn-box {
