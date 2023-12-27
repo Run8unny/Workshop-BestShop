@@ -692,7 +692,7 @@
     padding: 0.625rem;
 }
 
-.form-row--last {
+.form-row-last {
     display: flex;
     justify-content: flex-end;
 }
